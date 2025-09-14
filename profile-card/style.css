@@ -18,11 +18,20 @@ body {
   flex-direction: column;
   gap: 0.5rem;
   background-color: white;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 0);
 }
-p {
-  font-size: 1.4rem;
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+p .email {
+  font-size: 1.1rem;
   opacity: 0.8;
+}
+
+.email {
+  font-style: italic;
 }
 h4 {
   font-size: 1.8rem;

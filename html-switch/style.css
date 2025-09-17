@@ -8,7 +8,7 @@ body {
   padding: 2rem;
 
   --switch-height: 40px;
-  --switch-width: 100px;
+  --switch-width: 90px;
 }
 .switch {
   display: inline-block;

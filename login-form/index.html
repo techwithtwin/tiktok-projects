@@ -4,23 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="card">
       <h2>Enter your password</h2>
       <div class="profile">
-        <img src="https://avatars.githubusercontent.com/u/140457665?v=4" width="50" height="50" />
-        <div class="field">
-          <label for="password">Password</label>
+        <img
+          src="https://avatars.githubusercontent.com/u/140457665?v=4"
+          width="50"
+          height="50"
+        />
+        <div>
+          <p>Business Account</p>
+          <h4>Sarah Bills</h4>
+        </div>
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <div>
           <div>
+            <i class="fa-solid fa-lock"></i>
             <input type="password" name="password" id="password" />
           </div>
+          <i class="fa-solid fa-eye-slash"></i>
         </div>
       </div>
       <div>
         <div>
-          <input type="checkbox" id="toggle"/>
+          <input type="checkbox" id="toggle" />
           <label>Stay signed in</label>
         </div>
         <button>Continue</button>

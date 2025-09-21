@@ -5,11 +5,15 @@ const show = document.querySelector(".show");
 btn.addEventListener("click", handleClick);
 
 function handleClick() {
-  const r = Math.floor(Math.random() * 256);
-  const g = Math.floor(Math.random() * 256);
-  const b = Math.floor(Math.random() * 256);
+  const r = generateRandom();
+  const g = generateRandom();
+  const b = generateRandom();
   const rgb = `rgb(${r},${g},${b})`;
 
   body.style.backgroundColor = rgb;
   show.textContent = rgb;
+}
+
+function generateRandom() {
+  return Math.floor(Math.random() * 256);
 }

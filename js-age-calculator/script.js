@@ -9,8 +9,8 @@ function handleSubmit(e) {
   const data = new FormData(e.target);
   const birthDateStr = data.get("birth-date");
 
-  if (!birthDate){
-    alert('Invalid Data');
+  if (!birthDateStr) {
+    alert("Invalid Data");
     return;
   }
   const birthDate = new Date(birthDateStr);

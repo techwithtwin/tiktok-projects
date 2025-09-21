@@ -15,36 +15,40 @@
   </head>
   <body>
     <div class="card">
-      <h2>Enter your password</h2>
+      <h2 class="heading">Enter your password</h2>
       <div class="profile">
         <img
           src="https://avatars.githubusercontent.com/u/140457665?v=4"
           width="50"
           height="50"
         />
-        <div>
+        <div class="profile-detail">
           <p>Business Account</p>
           <h4>Sarah Bills</h4>
         </div>
       </div>
       <div class="field">
         <label for="password">Password</label>
-        <div>
-          <div>
-            <i class="fa-solid fa-lock"></i>
-            <input type="password" name="password" id="password" />
+        <div class="input-wrapper">
+          <div class="input-group">
+            <i class="fa-solid fa-lock icon"></i>
+            <input placeholder="********" type="password" name="password" id="password" />
           </div>
-          <i class="fa-solid fa-eye-slash"></i>
+          <i class="show-icon fa-solid fa-eye-slash icon"></i>
         </div>
       </div>
-      <div>
-        <div>
-          <input type="checkbox" id="toggle" />
-          <label>Stay signed in</label>
+      <div class="switch-btn-wrapper">
+        <div class="switch-wrapper">
+          <label for="toggle" class="switch">
+            <input type="checkbox" id="toggle" />
+            <span class="ball"></span>
+          </label>
+          <p>Stay Signed in?</p>
         </div>
-        <button>Continue</button>
+        <butto class="continue-btn">Continue</button>
       </div>
-      <p>Reset Password</p>
+      <p class="reset-link">Reset Password</p>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

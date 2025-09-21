@@ -16,6 +16,11 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+
+  /* Align to the center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {

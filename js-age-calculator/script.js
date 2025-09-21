@@ -9,12 +9,13 @@ function handleSubmit(e) {
   const data = new FormData(e.target);
   const birthDateStr = data.get("birth-date");
 
-  if (!birthDateStr) {
-    alert("Invalid Data");
-    return;
-  }
   const birthDate = new Date(birthDateStr);
   const today = new Date();
+
+  if (birthDate > today) {
+    alert("Birth Date can't be in future!");
+    return;
+  }
 
   // year difference
   let age = today.getFullYear() - birthDate.getFullYear();

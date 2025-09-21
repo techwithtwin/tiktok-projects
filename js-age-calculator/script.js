@@ -23,9 +23,10 @@ function handleSubmit(e) {
   // lets check if the birthday has occurred.
   const isMonthAhead = today.getMonth() > birthDate.getMonth();
   const isCurrentMonth = today.getMonth() === birthDate.getMonth();
-  const isTodayAhead = today.getDate() > birthDate.getDate();
+  const isTodayAheadOrEqual = today.getDate() >= birthDate.getDate();
 
-  const hasBirthdayOccurred = isMonthAhead || isCurrentMonth || isTodayAhead;
+  const hasBirthdayOccurred =
+    isMonthAhead || (isCurrentMonth && isTodayAheadOrEqual);
 
   if (!hasBirthdayOccurred) {
     age--;

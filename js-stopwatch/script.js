@@ -39,6 +39,7 @@ function handleClick(type) {
   }
 
   if ((type = "reset")) {
+    if (intervalId) return;
     timer.textContent = "00:00:00";
     return;
   }

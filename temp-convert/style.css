@@ -1,0 +1,45 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("https://cdn.pixabay.com/photo/2023/05/30/21/03/grey-heron-8030000_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100dvw;
+  height: 100dvh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.card {
+  width: 300px;
+  height: fit-content;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.345);
+  backdrop-filter: blur(4px);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 10px;
+  border: 5px solid transparent;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.4rem;
+}
+input {
+  padding: 0.5rem;
+}

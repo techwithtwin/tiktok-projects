@@ -35,6 +35,7 @@ function handleClick(type) {
   if (type === "stop") {
     if (!intervalId) return;
     clearInterval(intervalId);
+    intervalId = undefined;
     return;
   }
 

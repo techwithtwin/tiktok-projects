@@ -88,10 +88,15 @@ h3 {
 }
 .stock {
   display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.stock p {
+  font-size: 0.6rem;
 }
 .indicator {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   background-color: #06d68b;
   border-radius: 50%;
 }
@@ -106,7 +111,14 @@ h3 {
   gap: 0.4rem;
   align-items: center;
   background-color: transparent;
-  border: 2px solid gray;
+  border: 1px solid gray;
   border-radius: 5px;
   padding: 5px 10px;
+  transition: 0.2s;
+}
+
+.secondary-btns .btn:hover {
+  background-color: var(--blue);
+  color: white;
+  border: none;
 }

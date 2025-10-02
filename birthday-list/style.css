@@ -1,0 +1,71 @@
+@import url("https://fonts.bunny.net/css2?family=Quicksand:wght@500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ff94bd;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  font-family: "Quicksand", sans-serif;
+}
+h1 {
+  font-size: 1.4rem;
+}
+
+.card {
+  background-color: white;
+  width: 300px;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  box-shadow: -7px 4px 154px 0px rgba(0, 0, 0, 0.33);
+}
+
+.slot {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.profile img {
+  border-radius: 50%;
+}
+
+.profile p {
+  color: #333;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+button {
+  padding: 0.7rem 0.5rem;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(254, 105, 163, 1) 0%,
+    rgba(229, 109, 209, 1) 100%
+  );
+}
+
+button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(229, 109, 209, 1) 0%,
+    rgba(254, 105, 163, 1) 100%
+  );
+}

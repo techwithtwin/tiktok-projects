@@ -21,11 +21,6 @@ const users = [
     age: 25,
     dp: "https://i.pravatar.cc/300?img=4",
   },
-  {
-    name: "Allu Arjun",
-    age: 29,
-    dp: "https://i.pravatar.cc/300?img=5",
-  },
 ];
 
 (function setupProfiles() {

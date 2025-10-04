@@ -37,6 +37,7 @@ function handleClick(type) {
       updateTimer(time);
       if (intervalId) {
         clearInterval(intervalId);
+        intervalId = undefined;
       }
 
       break;

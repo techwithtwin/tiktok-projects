@@ -37,7 +37,7 @@ function calculateResult(userPick) {
   let winner;
 
   switch (computerPick) {
-    case "rock":
+    case "rock": {
       if (userPick === "rock") {
         winner = "tie";
       } else if (userPick === "paper") {
@@ -46,7 +46,8 @@ function calculateResult(userPick) {
         winner = "computer";
       }
       break;
-    case "paper":
+    }
+    case "paper": {
       if (userPick === "rock") {
         winner = "computer";
       } else if (userPick === "paper") {
@@ -54,16 +55,19 @@ function calculateResult(userPick) {
       } else {
         winner = "user";
       }
+
       break;
-    case "scissors":
+    }
+    case "scissors": {
       if (userPick === "rock") {
         winner = "user";
       } else if (userPick === "paper") {
         winner = "computer";
       } else {
-        winner = "tie";
+        winner = "tiel";
       }
       break;
+    }
   }
 
   return { winner, computerPick };

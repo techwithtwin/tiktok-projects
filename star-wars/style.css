@@ -8,4 +8,111 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.card {
+  width: 500px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  border-radius: 5px;
+  box-shadow: -1px 3px 19px -4px rgba(0, 0, 0, 0.43);
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading .left p {
+  color: #2870ff;
+}
+
+.rating span {
+  color: #2870ff;
+  font-weight: 600;
+}
+.content {
+  display: flex;
+  gap: 0.8rem;
+}
+.poster {
+  flex: 1;
+}
+.poster img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+}
+.details {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.card p {
+  font-size: 0.7rem;
+}
+.card h4 {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.more-details {
+  display: flex;
+  justify-content: space-between;
+}
+.more-details p {
+  color: #2870ff;
+}
+.more-details .director-sw {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.summary {
+  display: flex;
+  align-items: center;
+}
+.summary .left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.summary .left p {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.summary .left button {
+  padding: 3px 14px;
+  background: transparent;
+  border-radius: 12px;
+  font-weight: 600;
+  border: 2px solid black;
+}
+.summary .right {
+  flex: 2;
+  display: flex;
+  justify-content: end;
+}
+.summary .right button {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 5px 6.5px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.summary .right button p {
+  text-transform: uppercase;
+  font-weight: 500;
 }

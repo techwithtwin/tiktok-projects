@@ -10,8 +10,24 @@ The function can accept data which is are called parameters
 and when you call the function you give it the data it requires
 called arguments.
 
+Syntax:
+to create a function start with the function keyword
+followed by parenthesis and then followed by curly brackets
+which are also called function body.
+
+We've functions that return a value to you, and others don't return
+those that don't return return undefined by default.
+
+There are many ways of creating a function but let's focus on the function 
+declaration, and function expressions
+
+others include -> arrow functions,anonymous functions, Immediately involked 
+function expressions, Higher-order functions, callback functions,
+
+
 Using a greeting function
 e.g 
+
 */
 const heading = document.querySelector("h1");
 

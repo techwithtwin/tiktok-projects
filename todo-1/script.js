@@ -36,11 +36,12 @@ btn.addEventListener("click", () => {
 });
 
 wrapperBtns.forEach((btn) => {
-  btn.addEventListener("click", markTodoComplete);
+  btn.addEventListener("click", toggleTodoCompletion);
 });
 
-function markTodoComplete(e) {
-  let id = e.target.id;
+function toggleTodoCompletion(e) {
+  alert("called");
+  let id = Number(e.target.id);
   let todos = getTodosFromStorage();
   if (!todos) return;
   console.log(id);
@@ -48,14 +49,13 @@ function markTodoComplete(e) {
     if (td.id === id) {
       return {
         ...td,
-        isCompleted: true,
+        isCompleted: !td.isCompleted,
       };
     }
     return td;
   });
-
   console.log(newData);
-  return;
+
   localStorage.setItem(TODOS_KEY, JSON.stringify(newData));
 
   renderTodoList();

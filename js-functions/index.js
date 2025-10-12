@@ -15,6 +15,8 @@ to create a function start with the function keyword
 followed by parenthesis and then followed by curly brackets
 which are also called function body.
 
+the return value of a function can be assigned to a variable
+
 We've functions that return a value to you, and others don't return
 those that don't return return undefined by default.
 
@@ -24,9 +26,13 @@ declaration, and function expressions
 others include -> arrow functions,anonymous functions, Immediately involked 
 function expressions, Higher-order functions, callback functions,
 
+Function scope, local scope
+
 
 Using a greeting function
 e.g 
+
+NEXT: we will talk about arrow functions
 
 */
 const heading = document.querySelector("h1");

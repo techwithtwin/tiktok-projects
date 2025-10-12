@@ -3,11 +3,22 @@ const btn = document.querySelector("button");
 const todoList = document.querySelector(".todo-list");
 const TODOS_KEY = "todos";
 
-(function init() {
+function init() {
+  countTodos();
   renderTodoList();
-})();
+}
+init();
 
-const wrapperBtns = document.querySelectorAll(".wrapper");
+function countTodos() {
+  let count = 0;
+  let existingTodos = getTodosFromStorage();
+
+  if (existingTodos) {
+    count = existingTodos.length;
+  }
+
+  document.querySelector(".tasks-count").textContent = `${count} Tasks`;
+}
 
 btn.addEventListener("click", () => {
   let inputValue = input.value;
@@ -32,19 +43,13 @@ btn.addEventListener("click", () => {
 
   localStorage.setItem(TODOS_KEY, JSON.stringify(newData));
 
-  renderTodoList();
+  init();
 });
 
-wrapperBtns.forEach((btn) => {
-  btn.addEventListener("click", toggleTodoCompletion);
-});
-
-function toggleTodoCompletion(e) {
-  alert("called");
-  let id = Number(e.target.id);
+function toggleTodoCompletion(id) {
   let todos = getTodosFromStorage();
   if (!todos) return;
-  console.log(id);
+
   let newData = todos.map((td) => {
     if (td.id === id) {
       return {
@@ -54,11 +59,10 @@ function toggleTodoCompletion(e) {
     }
     return td;
   });
-  console.log(newData);
 
   localStorage.setItem(TODOS_KEY, JSON.stringify(newData));
 
-  renderTodoList();
+  init();
 }
 
 function renderTodoList() {
@@ -71,7 +75,7 @@ function renderTodoList() {
     htmlString += `
      <div class="todo">
           <p class="${td.isCompleted ? "completed" : ""}">${td.value}</p>
-          <div class="wrapper" id="${td.id}">
+          <div onClick={toggleTodoCompletion(${td.id})} class="wrapper" >
             <img
               style="display: ${td.isCompleted ? "inline" : "none"}"
               width="15"

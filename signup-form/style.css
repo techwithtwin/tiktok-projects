@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --primary: #4868ad;
+  --secondary: #1e2a4b;
+
+  background-color: #f3f9fe;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+p {
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.register {
+  background-color: white;
+  width: 400px;
+  padding: 2rem 4rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  text-align: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.field {
+  padding: 6px 10px;
+  width: 100%;
+  border: 1.5px solid rgba(0, 0, 0, 0.355);
+}
+.form-group {
+  display: flex;
+  gap: 5px;
+}
+button {
+  padding: 8px 10px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.7;
+}
+.fb {
+  background-color: var(--primary);
+}
+.new-account {
+  background-color: var(--secondary);
+}
+
+.cta {
+  font-size: 0.65rem;
+  color: #333;
+}

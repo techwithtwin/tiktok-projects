@@ -41,3 +41,8 @@ tiktok-projects/
 
 - This repo is only a container; each subproject may be private, experimental, or work-in-progress.
 - Over time, successful or polished projects can be moved into their own standalone repos.
+
+## Resources
+
+- Get Box Shadows [here](https://getcssscan.com/css-box-shadow-examples)
+- Fonts [here](https://fonts.google.com)

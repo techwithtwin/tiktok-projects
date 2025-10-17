@@ -1,8 +1,7 @@
 /*
-Given a string, return the letter that appears most frequently.
+Given a string, return an array with the letters that appears most frequently.
 If multiple letters appear with the maximum frequency,
-return the letter that appears earliest in the alphabet.
-If the string has no letters, return null. Treat letters as case-sensitive.
+return an array with all the elements e.g []. Treat letters as case-sensitive.
 
 Example:
 mostRepeating("Hello World! of") // "l"
@@ -22,7 +21,20 @@ function mostRepeating(str = "") {
     }
   }
 
-  console.log(charFreq);
+  let mr = [];
+  Object.entries(charFreq).forEach((item) => {
+    if (!mr.length) {
+      mr = item;
+      return;
+    }
+    if (item[1] > mr[1]) {
+      mr = item;
+    }
+  });
+
+  return mr;
 }
 
-mostRepeating("Hello World! of");
+const res = mostRepeating("Hello world!");
+
+console.log(res);

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <h2>Currency Converter</h2>
+
+      <div class="field">
+        <label for="amount">Amount</label>
+        <input type="number" placeholder="e.g 10" name="amount" id="amount" />
+      </div>
+      <div class="field">
+        <label for="from">From</label>
+        <select name="from" id="from"></select>
+      </div>
+      <div class="field">
+        <label for="to">To</label>
+        <select name="to" id="to"></select>
+      </div>
+
+      <p class="result">40</p>
+      <button type="submit">
+        <p>Submit</p>
+        <div class="loader"></div>
+      </button>
+    </form>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+<!-- 
+  <div class="field">
+        <label for="from">From</label>
+        <select name="from" id="from">
+          <option value="USD">USD - US Dollar</option>
+          <option value="GBP">GBP</option>
+          <option value="CAD">CAD</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="to">To</label>
+        <select name="to" id="to">
+          <option value="USD">USD</option>
+          <option value="GBP">GBP</option>
+          <option value="CAD">CAD</option>
+        </select>
+      </div>
+-->

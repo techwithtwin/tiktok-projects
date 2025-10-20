@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.card {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+  gap: 0.3rem;
+}
+.title h3 {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.img-wrapper {
+  position: relative;
+  height: 15rem;
+}
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 80%;
+  left: 10%;
+  padding: 0.6rem;
+  color: white;
+}
+.overlay > div {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.overlay > div p {
+  color: rgb(88, 88, 245);
+}
+.tag {
+  background-color: blue;
+  color: white;
+  padding: 0.4rem;
+  position: absolute;
+  top: 5%;
+  right: -8px;
+}
+.tag::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  bottom: -10px;
+  right: 0;
+  background-color: rgb(1, 1, 77);
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+  z-index: -1;
+}

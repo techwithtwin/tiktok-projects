@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  font-family: "DM Sans", sans-serif;
+
+  --text-color: #555555;
+}
+
+p {
+  color: var(--text-color);
+  font-weight: 300;
+}
+.card {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.img-wrapper {
+  height: 18rem;
+  position: relative;
+}
+.wishlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  width: 1.9rem;
+  aspect-ratio: 1 /1;
+}
+.wishlist i {
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content {
+  padding: 0.5rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.location {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+.location > div {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+}
+.location i {
+  color: var(--text-color);
+}
+.bottom {
+  display: flex;
+  gap: 10%;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.rating i,
+.rating p {
+  color: red;
+}
+.price-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.price {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #000;
+}

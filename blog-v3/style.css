@@ -55,6 +55,7 @@ button {
   background-color: transparent;
   border: 0.8px solid var(--text-color);
   border-radius: 5px;
+  color: var(--text-color);
 }
 .details {
   display: flex;

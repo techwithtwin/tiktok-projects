@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2rem;
+  background-color: #f6f2e2;
+  display: flex;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+}
+
+.card {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.card > p {
+  font-size: 0.85rem;
+  max-width: 80%;
+  color: #555555;
+}
+
+.img-wrapper {
+  /* height: 18rem; */
+  position: relative;
+  mask-image: url("./mask-bg.png");
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  padding-bottom: 1rem;
+  background-color: white;
+  transition: 0.2s;
+  overflow: hidden;
+}
+
+.card:hover .img-wrapper {
+  background-color: #3f9065;
+}
+
+.top {
+  position: relative;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.top > p {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: #ff9924;
+  padding: 0.55rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+}
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.actions {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  display: flex;
+  opacity: 0;
+  flex-direction: column;
+  gap: 0.7rem;
+  transform: translateX(150%);
+  transition: 0.2s;
+}
+.actions > div {
+  padding: 0.4rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.actions i {
+  width: "100%";
+  height: "100%";
+  object-fit: contain;
+}
+
+.card:hover .actions {
+  transform: translateX(5%);
+  opacity: 1;
+}

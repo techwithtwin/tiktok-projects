@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  font-family: "Nunito", sans-serif;
+  background-color: #fff2ef;
+
+  --primary: #066586;
+}
+p {
+  font-size: 0.75rem;
+}
+
+.login {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 0.8rem;
+  background-color: white;
+  width: 550px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+input {
+  padding: 8px 12px;
+  border-radius: 3px;
+  border: 0.8px solid rgb(128, 128, 128);
+}
+
+.description {
+  font-size: 0.8rem;
+  color: #555555;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+}
+.social-login > button {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+  padding: 7px 12px;
+  justify-content: center;
+  background-color: transparent;
+  border: 0.8px solid rgb(128, 128, 128);
+  border-radius: 5px;
+}
+
+.reset {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reset > p {
+  color: var(--primary);
+  font-weight: 500;
+}
+.reset > button {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 0.2rem;
+  color: white;
+  border: none;
+  background-color: var(--primary);
+}
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.sign-up-cta {
+  text-align: center;
+}
+.sign-up-cta span {
+  color: var(--primary);
+  text-decoration: underline;
+}
+.or-login-with {
+  text-align: center;
+  color: gray;
+  font-size: 0.65rem;
+}

@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2rem;
+  font-family: "Poppins";
+  display: flex;
+  justify-content: center;
+
+  --primary: #290b50;
+}
+
+.card {
+  padding: 0.8rem;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: center;
+  text-align: center;
+  border: 0.8px solid var(--primary);
+  border-radius: 5px;
+}
+.img-wrapper {
+  height: 17rem;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content {
+  padding: 0.2rem;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.content > h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: "Manrope", sans-serif;
+}
+
+.content > p {
+  font-size: 0.75rem;
+}
+button {
+  font-family: inherit;
+  background-color: #c8bbec;
+  color: var(--primary);
+  border: none;
+  padding: 7px 12px;
+  font-size: 0.8rem;
+  font-weight: 300;
+  align-self: center;
+  border-radius: 15px;
+}

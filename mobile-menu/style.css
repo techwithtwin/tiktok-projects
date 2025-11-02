@@ -7,8 +7,67 @@
 }
 
 body {
+  --primary: #4b6ed7;
+  --secondary: #738cd5;
   padding: 2rem;
   display: flex;
   justify-content: center;
   font-family: "Poppins", sans-serif;
+}
+
+.menu {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.menu .header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2rem 1rem 2.7rem 1rem;
+
+  color: white;
+  background: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);
+  border-bottom-left-radius: 15%;
+}
+.menu .header img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.menu .header > div h2 {
+  font-size: 1.1rem;
+}
+.menu .header > div p {
+  opacity: 0.9;
+  font-size: 0.8rem;
+}
+.menu .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem 2rem 2rem 2rem;
+}
+.menu .content > button {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  padding: 8px 12px;
+  color: white;
+  border: none;
+  width: fit-content;
+  border-radius: 5px;
+  background: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 100%);
+}
+.menu .content > div {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.menu .content > div.active {
+  color: var(--primary);
 }

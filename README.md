@@ -47,3 +47,4 @@ tiktok-projects/
 - Get Box Shadows [here](https://getcssscan.com/css-box-shadow-examples)
 - Fonts [here](https://fonts.google.com)
 - SVG shapes generator [here](https://www.softr.io/tools/svg-shape-generator)
+- Clip-path generator [here](https://bennettfeely.com/clippy/)

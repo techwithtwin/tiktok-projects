@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2rem;
+  font-family: "Inter", sans-serif;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #eff0f2;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.categories {
+  display: flex;
+  gap: 0.5rem;
+}
+.categories > p {
+  background-color: white;
+  padding: 0.3rem;
+}
+
+.card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.card .featured-img {
+  height: 15rem;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card .featured-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card .other-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.4rem;
+}
+.card .other-images img {
+  height: 6rem;
+  object-fit: cover;
+  border-radius: 20px;
+}

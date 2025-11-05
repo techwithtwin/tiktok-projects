@@ -12,6 +12,21 @@ body {
   font-family: "Lato", sans-serif;
   color: rgba(255, 255, 255, 0.7);
   padding: 2rem;
+  background-color: black;
+  position: relative;
+}
+
+.glow {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background-color: var(--primary);
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 0.3;
+  filter: blur(30px);
 }
 
 section {
@@ -27,7 +42,11 @@ section > div {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  border: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+section > div:hover {
+  border-color: var(--primary);
 }
 
 section div:nth-child(2) {

@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  background-color: #f1f6f8;
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1.9rem;
+  border-radius: 5px;
+  width: 450px;
+}
+.desc {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  width: 100%;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.301);
+  border-radius: 5px;
+}
+.input-group button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 10px 12px;
+  background-color: #3e9fff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.condition {
+  display: flex;
+  gap: 0.5rem;
+}
+.condition label {
+  font-size: 0.7rem;
+  text-align: start;
+  opacity: 0.7;
+}

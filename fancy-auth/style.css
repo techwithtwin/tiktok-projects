@@ -15,6 +15,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
 .auth {
   background-color: white;
   border-radius: 12px;
@@ -28,15 +29,19 @@ body {
 .auth > * {
   flex: 1;
 }
-.left {
+.left,
+.right2 {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--primary);
+}
+.left {
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
 }
-.left > div {
+.left > div,
+.right2 > div {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -44,11 +49,13 @@ body {
   text-align: center;
   color: white;
 }
-.left > div > p {
+.left > div > p,
+.right2 > div > p {
   font-size: 0.75rem;
 }
 
-.left > div > button {
+.left > div > button,
+.right2 > div > button {
   width: fit-content;
   padding: 5px 12px;
   border: 1px solid white;
@@ -58,7 +65,8 @@ body {
   font-size: 0.75rem;
 }
 
-.right {
+.right,
+.left2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,7 +74,8 @@ body {
   padding: 2rem;
 }
 
-.right p {
+.right p,
+.left2 p {
   font-size: 0.75rem;
   color: #555555;
 }
@@ -82,7 +91,8 @@ body {
   transform: translateY(-50%);
 }
 
-.right > button {
+.right > button,
+.left2 > button {
   border-radius: 10px;
   border: none;
   padding: 8px 10px;
@@ -108,4 +118,10 @@ input {
   border: 1px solid gray;
   padding: 0.4rem;
   border-radius: 5px;
+}
+
+/* specific */
+.right2 {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 }

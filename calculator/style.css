@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #e9edf0;
+}
+
+.calc {
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.display {
+  background-color: #77909d;
+  color: white;
+  height: 10rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0.8rem;
+}
+.display > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+.expression {
+  display: flex;
+  gap: 0.1rem;
+  align-items: center;
+}
+.result {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.item {
+  padding: 1.5rem;
+  color: #57666b;
+  background-color: white;
+  border-width: 0.8px;
+  border-style: solid;
+  border-color: #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item.priority {
+  background-color: #e4e9ec;
+  border-color: white;
+  border-right: transparent;
+}
+.item.equal {
+  background-color: #ff6568;
+  color: white;
+  transform: scale(1.2);
+}

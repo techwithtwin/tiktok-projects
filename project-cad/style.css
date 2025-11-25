@@ -73,6 +73,9 @@ body {
   gap: 0.5rem;
   align-items: center;
 }
+.tasks > p {
+  font-weight: 600;
+}
 .progress {
   flex: 1;
   display: flex;

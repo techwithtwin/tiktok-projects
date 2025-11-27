@@ -10,12 +10,12 @@ body {
   --primary: #282739;
 
   font-family: "Roboto", sans-serif;
+  padding: 2rem;
   background-color: #e5e6f1;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 60vh;
   color: var(--primary);
 }
 .account {

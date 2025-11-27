@@ -7,9 +7,13 @@
 }
 
 body {
+  --primary: #737493;
+
   font-family: "Roboto", sans-serif;
   padding: 2rem;
   background-color: #f1f3fe;
+  display: flex;
+  justify-content: center;
 }
 
 main {
@@ -27,15 +31,63 @@ main {
 
 .left {
   display: flex;
-  gap: 0.3rem;
+  gap: 0.5rem;
   align-items: center;
+}
+.left select {
+  width: 40px;
+}
+.left > p {
+  font-size: 0.8rem;
+  color: #737493;
+}
+.input-group {
+  width: 200px;
+  position: relative;
+  overflow: hidden;
+}
+.input-group input {
+  border: none;
+  width: 100%;
+  padding: 8px 10px;
+  padding-left: 30px;
+}
+.input-group i {
+  color: #555555;
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translateY(-50%);
+}
+
+table {
+  border-spacing: 0 5px;
+}
+
+th,
+td {
+  margin-bottom: 5rem;
+  padding: 0.6rem 0.8rem;
 }
 th > div {
   display: flex;
   align-items: center;
   gap: 0.2rem;
+  color: #737493;
 }
 
-table tr:not(:first-child) {
+tr:not(:first-child) {
   background-color: white;
+  transition: 0.2s;
+}
+
+tr:not(:first-child):hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+td {
+  color: #555555;
 }

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,5 +7,113 @@
 }
 
 body {
+  --secondary: #9aa09f;
+  --primary: #04d6dc;
+
   padding: 2rem;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(./bg.jpg);
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+.ticket {
+  width: 550px;
+  height: fit-content;
+  border-radius: 3px;
+  display: flex;
+  background: linear-gradient(90deg, #fafefd, #e8faf7);
+  box-shadow: rgba(9, 215, 219, 0.1) 0px 8px 24px,
+    rgba(9, 215, 219, 0.1) 0px 16px 56px, rgba(9, 215, 219, 0.1) 0px 24px 80px;
+}
+.desc {
+  font-size: 0.8rem;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 1.4rem 1rem;
+  color: var(--secondary);
+}
+.left__heading {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.left__heading > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left__heading > div h3 {
+  color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.details {
+  background-color: #e2fcf8;
+  padding: 0.7rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  border-radius: 3px;
+}
+.details div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+.details div p:first-child {
+  font-size: 0.8rem;
+}
+.details div p:last-child {
+  color: var(--primary);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 1.4rem 1rem;
+  color: var(--secondary);
+  /* transform: rotate(270deg); */
+}
+
+.right__heading {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+.right__heading > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right__heading > div h3 {
+  color: #04d6dc;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.right__second {
+  display: flex;
+  gap: 0.3rem;
+}
+.right__second > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right__second > div  {
+  
+}
+
+.plane {
+  transform: rotate(45deg);
 }

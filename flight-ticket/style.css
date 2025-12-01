@@ -21,18 +21,20 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .ticket {
-  width: 550px;
-  height: fit-content;
+  width: 600px;
+  height: 15rem;
   border-radius: 3px;
   display: flex;
+  align-items: center;
   background: linear-gradient(90deg, #fafefd, #e8faf7);
   box-shadow: rgba(9, 215, 219, 0.1) 0px 8px 24px,
     rgba(9, 215, 219, 0.1) 0px 16px 56px, rgba(9, 215, 219, 0.1) 0px 24px 80px;
 }
 .desc {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 .left {
+  flex: 2;
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
@@ -76,13 +78,14 @@ body {
 }
 
 .right {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.7rem;
   padding: 1.4rem 1rem;
   color: var(--secondary);
-  /* transform: rotate(270deg); */
+  transform: rotate(270deg);
 }
 
 .right__heading {
@@ -101,6 +104,9 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
 }
+.right__heading > div p {
+  font-size: 0.7rem;
+}
 .right__second {
   display: flex;
   gap: 0.3rem;
@@ -110,10 +116,19 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.right__second > div  {
-  
-}
 
+.right__second > div p:first-child {
+  font-size: 0.75rem;
+}
+.right__second > div p:last-child {
+  font-size: 0.85rem;
+  color: var(--primary);
+}
 .plane {
   transform: rotate(45deg);
+}
+.separator {
+  height: inherit;
+  border: 1px dashed var(--secondary);
+  opacity: 0.6;
 }

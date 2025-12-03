@@ -85,7 +85,7 @@ body {
   gap: 0.7rem;
   padding: 1.4rem 1rem;
   color: var(--secondary);
-  transform: rotate(270deg);
+  /* transform: rotate(270deg); */
 }
 
 .right__heading {

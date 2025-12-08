@@ -81,9 +81,10 @@ main {
 
 .card__content h3 {
   color: #4b5563;
+  font-size: 1rem;
 }
 .price {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
 }
 
@@ -105,14 +106,12 @@ main {
 .badge.danger {
   background-color: var(--red);
 }
-@media (min-width: 480px) {
-  main {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
 
 @media (min-width: 768px) {
   main {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .card__content h3 {
+    font-size: 1.4rem;
   }
 }

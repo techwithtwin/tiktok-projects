@@ -5,6 +5,9 @@
 }
 
 body {
-  --cardBg: #f1f5f9;
+  --primary: #0ab6d4;
+  --secondary: #f1f5f9;
+  --red: #ef4444;
+
   background-color: white;
 }

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -9,5 +11,108 @@ body {
   --secondary: #f1f5f9;
   --red: #ef4444;
 
+  padding: 2rem;
   background-color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.img-wrapper {
+  height: 18rem;
+  padding: 1rem 0.6rem;
+  background-color: var(--secondary);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border: 2px solid transparent;
+  position: relative;
+  transition: 0.2s;
+}
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.add-to-cart {
+  background-color: var(--primary);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  padding: 10px 8px;
+  transform: translateY(100%);
+  transition: 0.2s;
+}
+
+.card:hover .img-wrapper {
+  border-color: var(--primary);
+  cursor: pointer;
+}
+.card:hover .add-to-cart {
+  transform: translateY(0);
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.card__content h3 {
+  color: #4b5563;
+}
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.price sup {
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  background-color: var(--primary);
+  padding: 0.5rem 0.7rem;
+  border-bottom-right-radius: 10px;
+}
+.badge.danger {
+  background-color: var(--red);
+}
+@media (min-width: 480px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

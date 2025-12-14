@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #7d6bae, #3f4e7f);
+}
+
+.card {
+  background-color: white;
+  width: 500px;
+  height: fit-content;
+  padding: 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.apps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+  position: relative;
+  padding: 0.7rem;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.app:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+button {
+  cursor: pointer;
+}
+
+.app > button {
+  position: absolute;
+  bottom: -100%;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: #73d625;
+  padding: 4px 7px;
+  border: none;
+  border-radius: 5px;
+  transition: 0.1s;
+}
+.app:hover > button {
+  bottom: 4%;
+}
+.app > button p {
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.1rem;
+}
+.main-btn {
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.1rem;
+  background: linear-gradient(90deg, #6880ff, #6880ff);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

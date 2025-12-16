@@ -13,7 +13,7 @@ body {
 footer {
   width: 100vw;
   height: fit-content;
-  padding: 3rem 1.5rem;
+  padding: 3.5rem 2rem;
   color: white;
   background-image: url(./footer_bg.png);
   display: flex;
@@ -64,12 +64,6 @@ h3 {
 }
 
 /* Media queries */
-
-@media (min-width: 768px) {
-  .top {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 @media (min-width: 1024px) {
   .footer {
     padding: 4.5rem 3rem;

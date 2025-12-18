@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="toast-container"></div>
+    <main>
+      <button class="btn-success" onclick="handleToast()">Toast success</button>
+      <button class="btn-error" onClick="handleToast('error')">
+        Toast Error
+      </button>
+    </main>
+    <script src="./script.js"></script>
+  </body>
 </html>

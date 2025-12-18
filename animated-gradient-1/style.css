@@ -11,11 +11,12 @@ body {
 }
 
 .avatar {
-  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
   height: 15rem;
   width: 15rem;
-  border-radius: 50%;
-  border: 8px solid #e10000;
+  border: 6px solid;
+  position: relative;
 }
 
 .avatar::after {
@@ -50,5 +51,39 @@ body {
 @keyframes orbit {
   to {
     transform: translateX(-50%) rotate(360deg);
+  }
+}
+.avatar::before {
+  content: "";
+  position: absolute;
+  height: 6px;
+  width: 3rem;
+  background-color: red;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  animation: move 5s infinite ease;
+}
+
+@keyframes move {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    right: 0;
+    top: 0;
+  }
+  50% {
+    bottom: 0;
+    right: 0;
+  }
+  75% {
+    bottom: 0;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
   }
 }

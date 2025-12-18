@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+.card {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.img-wrapper {
+  position: relative;
+  height: 22rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tag {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  background-color: #f0524c;
+  border-radius: 50%;
+  padding: 0.4rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.actions {
+  position: absolute;
+  top: 5%;
+  right: 4%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.actions i {
+  font-size: 1.7rem;
+  color: #626262;
+  cursor: pointer;
+}
+.actions > div:hover i {
+  color: #f0524c;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.3rem 0.5rem;
+}
+.content h4 {
+  font-weight: 500;
+  color: #555555;
+  font-size: 1.4rem;
+}
+.content > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.content > div p:first-child {
+  font-size: 0.85rem;
+  text-decoration: line-through;
+  color: #555555;
+}
+.content > div p:last-child {
+  font-weight: 700;
+  font-size: 1.3rem;
+}

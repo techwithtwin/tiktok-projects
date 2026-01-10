@@ -24,6 +24,7 @@ body {
   width: 100%;
   border-radius: 7px;
   overflow: hidden;
+  cursor: pointer;
 }
 .img-container > img {
   width: 100%;
@@ -31,22 +32,15 @@ body {
   object-fit: cover;
   object-position: center center;
 }
-.main-image {
-  transition: all 0.5s cubic-bezier(0, 0, 0.3, 1);
-}
+
 .secondary-image {
-  opacity: 0;
-  visibility: hidden;
-  transform: scale(1.1);
-  transition: all 0.5s cubic-bezier(0, 0, 0.3, 1);
+  display: none;
 }
 .img-container:hover .main-image {
   display: none;
 }
 .img-container:hover .secondary-image {
-  opacity: 1;
-  transform: scale(1);
-  visibility: visible;
+  display: block;
 }
 h3 {
   font-weight: 400;
@@ -88,6 +82,7 @@ h3 {
   border-radius: 50%;
   border: 1px solid gainsboro;
   padding: 0.1rem;
+  cursor: pointer;
 }
 .color-wrapper > div {
   width: 20px;

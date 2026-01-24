@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  --primary: #734bdf;
+  --secondary: #f6f6f7;
+  --black: #151b2d;
+  --white: #ffffff;
+
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  font-family: "Onest", sans-serif;
+  background-color: white;
+}
+.card {
+  width: 400px;
+  background-color: var(--secondary);
+  color: var(--black);
+  padding: 0.6rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.popular-tag {
+  position: absolute;
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  width: 50%;
+  right: 10%;
+  top: -6%;
+  transform: rotate(45deg) translateX(50%) translateY(-50%);
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.75rem;
+  gap: 1rem;
+}
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.icon-wrapper {
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem;
+  border-radius: 14px;
+}
+.price {
+  display: flex;
+}
+.price * {
+  align-self: flex-end;
+}
+.price p:first-child {
+  font-size: 1.5rem;
+  font-weight: 600;
+  align-self: center;
+}
+
+.bottom {
+  background-color: white;
+  padding: 1.5rem;
+  padding-top: 0.75rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.bottom-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.feature {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.feature p {
+  font-size: 0.9rem;
+}
+
+button {
+  background-color: var(--primary);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 14px;
+  border: none;
+  padding: 10px 12px;
+}

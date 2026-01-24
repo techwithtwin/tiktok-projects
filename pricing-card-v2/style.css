@@ -69,9 +69,12 @@ body {
   align-self: flex-end;
 }
 .price p:first-child {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 700;
   align-self: center;
+}
+.price p {
+  font-size: 0.85rem;
 }
 
 .bottom {

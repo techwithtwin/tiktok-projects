@@ -16,7 +16,6 @@ body {
 }
 .card {
   width: 370px;
-  background-color: white;
   display: flex;
   border-radius: 5px;
   overflow: hidden;
@@ -30,6 +29,7 @@ h4 {
 .img-wrapper {
   flex: 1;
   position: relative;
+  height: 100%;
 }
 .discount {
   position: absolute;

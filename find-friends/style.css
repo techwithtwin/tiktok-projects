@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2776f9;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.card {
+  width: 350px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 0.9rem;
+  color: white;
+  background-image: linear-gradient(90deg, #0f49a7, #1a65db);
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+.title h2 {
+  text-align: center;
+  flex: 1;
+}
+
+.input-group {
+  position: relative;
+}
+.input-group input {
+  width: 100%;
+  padding: 12px 12px;
+  padding-left: 2.2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #3a76d4;
+}
+.input-group input::placeholder {
+  color: #72a1e5;
+  font-size: 1rem;
+}
+.input-group img {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.content {
+  background-color: #d6ecff;
+}
+.content {
+  padding: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.friend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.left h3 {
+  color: #134593;
+}
+.avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid #a6c5ee;
+}
+
+.friend button {
+  padding: 7px 12px;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  font-size: 1rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  background-image: linear-gradient(90deg, #0f4ba9, #1862d7);
+}

@@ -9,6 +9,8 @@
 body {
   font-family: "Poppins", sans-serif;
   padding: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .card {

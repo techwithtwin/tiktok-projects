@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+
+  --text-color: #85898b;
+}
+
+body {
+  background-color: #fe3d00;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  font-family: "Inter", sans-serif;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  background-color: white;
+  align-items: center;
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+.summary {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logo-wrapper {
+  width: 7rem;
+}
+.logo-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.date {
+  color: var(--text-color);
+  font-size: 0.85rem;
+}
+.summary h3 {
+  font-size: 2.5rem;
+}
+.league {
+  font-size: 1rem;
+}
+.location {
+  color: var(--text-color);
+  font-size: 0.85rem;
+}
